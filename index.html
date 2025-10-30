@@ -1,347 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DIGITAL INDIA</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Asimovian&family=Bebas+Neue&family=Gravitas+One&family=Poppins:wght@500&display=swap" rel="stylesheet">
-</head>
-<style>
-    *
-    {
-       
-        margin: 0%;
-        color: white;
-    }
- 
-    header{
-        width: 100%;
-        height: 100px;
-        background: linear-gradient(90deg,rgba(20, 123, 179, 0.93) 0%, rgba(57, 120, 43, 0.92) 100%, rgba(12, 117, 112, 0.94) 0%);
-        margin: auto;
-        box-shadow:  2px 2px 2px white;
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DIGITAL INDIA</title>
 
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+   
+   
+    *{
+        box-sizing:border-box;
+        margin:0;
+        padding:0
     }
-    #img{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        opacity: 0.5;
-        margin-top: 50px;
+    html{
+        scroll-behavior:smooth
     }
     body{
-        background-color: rgb(0, 0, 0) ;
+      font-family:"Poppins",sans-serif;
+      background: black;
+      color:#fff;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.6;
+      scroll-snap-type: y mandatory;
     }
-    #di{
-        width: 10%;
-        height: 70px;
-        /* background: red; */
-        color: white;
-        font-size: x-large;
 
-        
-    }
-    #navbar {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 50%;
-        height: 70px;
-        /* background: green; */
-        color: white;
-        list-style: none;
-        
-    }
-  
-.bebas-neue-regular {
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
- .box1{
-    width: 8%;
-    height: 40px;
-    /* background: blue; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    /* border: 5px white double; */
-    border-radius: 20px;
-         box-shadow: 2px 2px 2px white;
- }
-
- h1{
-    color: white;
-    /* background: red; */
-    width: 50%;
-    padding: 1px;
-    margin-top: 50px;
-    margin-left: 50px;
-    box-shadow: 2px 2px 2px white;
-    border-radius: 20px;
-     background: rgb(30, 29, 29);
- }
- p{
-    width: 50%;
-    margin-top: 20px;
-    margin-left: 50px;
-
- }
- #content{
-    display: flex;
- }
-#c2{
-    margin-top: 150px;
-    width: 50%;
-    margin-right: 130px;
-    background: rgb(30, 29, 29);
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 2px 2px 2px white;
-    color: white;
-}
-
-
-#qf{
-    width: 100%;
-    display: flex;
-    /* justify-content: center; */
-    justify-content: space-evenly;
-    align-items: center;
-    
-}
-#qf h2{
-    text-align: center;
-   
-   
-}
-#qf p{
-    margin-right: 40px;
-    width: 100%;
-}
-#qf div{
-      /* background: linear-gradient(90deg,rgba(20, 123, 179, 0.93) 0%, rgba(57, 120, 43, 0.92) 100%, rgba(12, 117, 112, 0.94) 0%); */
-      box-shadow:  2px 2px 2px white;
-      border-radius: 20px;
-      background: rgb(0, 0, 0);
-}
-
-#intro{
-    width: 80%;
-    /* display: flex; */
-    /* justify-content: center; */
-    margin: auto;
-    margin-top: 10px;
-    /* background:rgb(30, 29, 29); */
-      padding: 20px;
-    border-radius: 20px;
-    box-shadow: 2px 2px 2px white;
-    margin-top: 50px;
-    margin-left: 100px;
-    padding: 50px;
-}
-
-#intro h3{
-   
-    text-align: center;
-    font-size: xx-large;
-    
  
-  
+    header{
+      position:sticky; top:0; z-index:60;
+      display:flex; align-items:center; justify-content:space-between;
+      padding:14px 28px; gap:12px; height:84px;
+      background: linear-gradient(90deg,rgba(20, 123, 179, 0.93) 0%, rgba(57, 120, 43, 0.92) 100%, rgba(12, 117, 112, 0.94) 0%);
+      border-bottom: 1px solid white;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+      
+    }
+    #brand{ display:flex; gap:12px; align-items:center; font-family:"Bebas Neue",sans-serif; font-size:1.4rem; }
+    #brand img{ width:54px; height:auto; filter: drop-shadow(0 10px 30px rgba(105,231,240,0.06)); }
 
-}
-#intro p{
-    width: 100%;
+    nav{ display:flex; gap:16px; align-items:center; }
+    nav a{ color:white; text-decoration:none; padding:8px 10px; border-radius:10px; font-weight:500; transition: all .22s ease; }
+    nav a:hover{ color:#69e7f0; transform:translateY(-3px) scale(1.03) }
 
-}
-#exp{
-        width: 100%;
-    display: flex;
-    /* justify-content: center; */
-    justify-content: space-evenly;
-    align-items: center;
+    .cta{ padding:10px 16px; border-radius:28px; background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01)); box-shadow:0 6px 26px rgba(0,0,0,0.6); cursor:pointer; transition: .22s; }
+    .cta:hover{ transform:translateY(-4px); box-shadow: 0 18px 56px rgba(105,231,240,0.06); color:#000; background:#fff; }
+
+
+    section{ min-height:calc(100vh - 84px); padding:72px 6vw; scroll-snap-align:start; display:flex; flex-direction:column; gap:28px; position:relative; }
+
    
-    
-    
-}
-#exp h2{
-    text-align: center;
-    width: 80%;
-    margin: auto;
-    
-   
-   
-}
-#expcontainer ul li{
-    width: 60%;
-    margin: auto;
+    .hero {
+      display:flex; gap:36px; align-items:center; flex-wrap:wrap; justify-content:space-between;
+      background: linear-gradient(180deg, rgba(255,255,255,0.015), rgba(0,0,0,0.05));
+      border-radius:14px;
+      padding:28px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.65), inset 0 1px 0 rgba(255,255,255,0.02);
+      position:relative;
+      overflow:visible;
+    }
+    .hero .intro {
+      flex:1 1 620px; max-width:820px;
+      padding:18px 12px;
+      animation: fadeInLeft .9s ease both;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.008));
+      border-radius:12px;
+    }
+    @keyframes fadeInLeft { from{opacity:0; transform:translateX(-18px)} to{opacity:1; transform:none} }
+    .hero h1{ font-family:"Bebas Neue",sans-serif; font-size:1.9rem; margin-bottom:10px; }
+    .hero p{ color:rgba(255,255,255,0.86); }
 
-    
-    
-}
-#exp div{
-      /* background: linear-gradient(90deg,rgba(20, 123, 179, 0.93) 0%, rgba(57, 120, 43, 0.92) 100%, rgba(12, 117, 112, 0.94) 0%); */
-      box-shadow:  2px 2px 2px white;
-      border-radius: 20px;
-          /* background: linear-gradient(90deg,rgba(20, 123, 179, 0.93) 0%, rgba(57, 120, 43, 0.92) 100%, rgba(12, 117, 112, 0.94) 0%);
-           */
-           background: black;
-}
-#expcontainer{
-      margin-top: 150px;
-    width: 35%;
-    margin-left: 50px;
-    margin-right: 100px;
-    background: rgb(30, 29, 29);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px white;
-    color: white;
+    .hero .card {
+      width:320px; min-width:240px;
+      background: linear-gradient(180deg, rgba(0,0,0,0.55), rgba(0,0,0,0.45));
+      padding:20px; border-radius:14px; box-shadow: 0 10px 34px rgba(0,0,0,0.6);
+      animation: fadeInRight .9s ease both;
+    }
+    @keyframes fadeInRight { from{opacity:0; transform:translateX(18px)} to{opacity:1; transform:none} }
 
-}
-.milestone{
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 300px;
-    margin: auto;
-    margin-top: 50px;
-    /* margin-right: 50px; */
-    box-shadow: 2px 2px 2px white;
-    /* background: rgb(30, 29, 29); */
-    border-radius: 20px;
-    text-align: center;
-    font-size: 20px;
-}
-.milestone div{
-     background: rgb(30, 29, 29);
-     width: 20%;
-     height: 150px;
-       border-radius: 10px;
-    box-shadow: 2px 2px 2px white;
-    margin-top: 70px;
-    padding: 10px;
-
-}
-#p{
-display: flex;
-justify-content: center;
-    width: 90%;
-    margin: auto;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px white;
-    margin-top: 70px;
-    
-    padding: 10px;
-    padding-left: 50px;
-
-}
-#container2{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-
+    .facts{ display:flex; gap:12px; margin-top:16px; justify-content:space-between; }
+    .fact{ flex:1; background:rgba(255,255,255,0.015); padding:12px; border-radius:10px; text-align:center; transition: transform .22s ease; }
+    .fact:hover{ transform:translateY(-6px); box-shadow: 0 0 24px rgba(105,231,240,0.12), 0 0 60px rgba(105,231,240,0.03); }
 
   
-</style>
+    .two-col{
+      display:flex; gap:28px; align-items:center; justify-content:space-between; flex-wrap:wrap;
+    }
+    .text-block{ flex:1 1 520px; min-width:260px; background:rgba(255,255,255,0.04); padding:22px; border-radius:14px; box-shadow:0 10px 40px rgba(0,0,0,0.65), inset 0 1px 0 rgba(255,255,255,0.02); color:rgba(255,255,255,0.86); }
+    .img-card{
+      width:360px; min-width:220px; border-radius:14px; overflow:hidden; position:relative;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+      transition: transform .28s ease, box-shadow .28s ease;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.006));
+    }
+
+
+        .img-card img{ width:100%; height:220px; object-fit:cover; display:block; }
+    .img-card .caption{
+      padding:14px; font-weight:600; font-size:0.95rem; background: linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.15));
+      color:#fff;
+    }
+    .img-card:hover{
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 28px 80px rgba(105,231,240,0.06), 0 8px 42px rgba(183,123,255,0.04);
+    }
+
+    .img-card::before{
+      content:""; position:absolute; inset:-2px; z-index:2; pointer-events:none;
+      background: linear-gradient(90deg, rgba(105,231,240,0.20), rgba(183,123,255,0.12));
+      filter: blur(12px); opacity:0.9; mix-blend-mode:screen; border-radius:16px;
+    }
+    .img-card::after{
+      content:""; position:absolute; inset:0; z-index:1; pointer-events:none;
+      background: linear-gradient(180deg, rgba(0,0,0,0.1), rgba(0,0,0,0.35));
+    }
+
+    .img-card.small img{ height:160px; }
+
+  
+    .grid{ display:grid; grid-template-columns: repeat(3, 1fr); gap:20px; width:100%; max-width:1200px; margin-inline:auto; }
+    .card{ background:rgba(255,255,255,0.04); padding:18px; border-radius:12px; box-shadow:0 10px 40px rgba(0,0,0,0.65), inset 0 1px 0 rgba(255,255,255,0.02); transition: transform .22s; }
+    .card:hover{ transform:translateY(-8px); box-shadow: 0 30px 56px rgba(0,0,0,0.7); }
+
+    .stack{ display:flex; flex-direction:column; gap:16px; max-width:1000px; margin-inline:auto; }
+
+    .counters{ display:flex; gap:18px; justify-content:center; flex-wrap:wrap; }
+    .counter{ min-width:140px; padding:18px; text-align:center; border-radius:12px; background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); box-shadow:0 10px 40px rgba(0,0,0,0.65), inset 0 1px 0 rgba(255,255,255,0.02); }
+
+    .join-row{ display:flex; gap:18px; justify-content:space-between; align-items:center; flex-wrap:wrap; max-width:1100px; margin-inline:auto; }
+    .join-row > div{ background:rgba(255,255,255,0.04); padding:18px; border-radius:12px; box-shadow:0 10px 40px rgba(0,0,0,0.65), inset 0 1px 0 rgba(255,255,255,0.02); flex:1; }
+
+    footer{ padding:30px 6vw; background: linear-gradient(90deg, rgba(6,22,34,0.98) 0%, rgba(10,8,26,0.98) 100%); display:flex; gap:24px; flex-wrap:wrap; justify-content:space-evenly; }
+
+
+    .accent1{ color:#69e7f0; text-shadow: 0 0 10px rgba(105,231,240,0.15); }
+    .accent2{ color:#f0ff7b; text-shadow: 0 0 10px rgba(183,123,255,0.12); }
+
+
+    @keyframes subtleFloat { from{ transform: translateY(0) } 50% { transform: translateY(-6px) } to { transform: translateY(0) } }
+    .float { animation: subtleFloat 6s ease-in-out infinite; }
+
+ 
+    @media (max-width:1100px){ .grid{ grid-template-columns: repeat(2, 1fr); } .img-card{ width:320px } }
+    @media (max-width:800px){
+      header{ padding:12px 16px; height:auto; gap:8px; }
+      .two-col{ flex-direction:column-reverse; }
+      .img-card{ width:100%; max-width:640px; }
+      .img-card img{ height:220px; }
+      .grid{ grid-template-columns: 1fr; }
+      section{ padding:36px 4vw; min-height:auto; }
+    }
+  </style>
+</head>
 <body>
-    <header>
-        <div id="di" class="bebas-neue-regular">Digital india 2047
-            <img src="image/logo.png" width="60%" alt="">
-        </div>
-        <div id="navbar">
-            <li>Home</li>
-            <li>About</li>
-            <li>Pillars</li>
-            <li>initiatives</li>
-        </div>
-        <div class="box1">Contact</div>
-        <div class="box1">Join Mission</div>
-    </header>
-    <!-- <div id="img"><img src="image/a2.gif" ></div> -->
-     <div id="content">
-        <div id="c1">
 
-    <h1>Digital India 2047 — Connectivity, Innovation, Inclusion</h1>
-    <p>Unlocking a digitally-enabled future for all citizens by 2047: resilient infrastructure, digital skills, trustworthy governance and an innovation-led economy.</p>
+
+  <header>
+    <div id="brand">
+      <div>Digital india 2047</div>
+      <img src="image/logo.png" alt="logo">
     </div>
-    <div id="c2">
+
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#pillars">Pillars</a>
+      <a href="#initiatives">Initiatives</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#join">Join</a>
+    </nav>
+
+    <div style="display:flex;gap:10px;align-items:center">
+      <div class="cta">Contact</div>
+      <div class="cta">Join Mission</div>
+    </div>
+  </header>
+
+  <section id="home" style="background: linear-gradient(180deg, rgba(10,8,20,0.25), rgba(0,0,0,0.25));">
+    <div class="hero">
+      <div class="intro" id="c1">
+        <h1>Digital India 2047 — Connectivity, Innovation, Inclusion</h1>
+        <p>Unlocking a digitally-enabled future for all citizens by 2047: resilient infrastructure, digital skills, trustworthy governance and an innovation-led economy. Vision 2047 is about reshaping India's innovation landscape. If state governments, industry, and the Centre collaborate to unlock the potential of Tier 2 and Tier 3 cities, India can position itself as a global leader in tech talent and innovation. The opportunity is unprecedented, and the time to act is now.</p>
+      </div>
+
+      <aside class="card" id="c2">
         <h3>Ouick Facts</h3>
-        <p><ul>
-            <li>
-                A long-term plan to integrate technology into every sector — public services, healthcare, education, agriculture and industry.
-            </li>
-            <li>Digital India aims to be a global technological powerhouse built on digital public infrastructure, advanced AI, and indigenous hardware manufacturing.</li>
-            <li>By India's 100th year of independence, it is projected to become a $23–$35 trillion tech-driven economy. </li>
-        </ul></p>
-        <div id="qf">
-            <div >
-                <h2 style= "color: #69e7f0" >2047</h2>
-                <p>Vision year</p>
-            </div>
-            <div>
-                <h2 style="color: #def069">Universal</h2>
-                <p>Access to digital services</p>
-            </div>
+        <ul>
+          <li>A long-term plan to integrate technology into every sector — public services, healthcare, education, agriculture and industry.</li>
+          <li>Digital India aims to be a global technological powerhouse built on digital public infrastructure, advanced AI, and indigenous hardware manufacturing.</li>
+          <li>By India's 100th year of independence, it is projected to become a $23–$35 trillion tech-driven economy. </li>
+        </ul>
+
+        <div class="facts" id="qf" style="margin-top:16px">
+          <div class="fact"><h2 class="accent1">2047</h2><p>Vision year</p></div>
+          <div class="fact"><h2 class="accent2">Universal</h2><p>Access to digital services</p></div>
         </div>
+      </aside>
     </div>
+  </section>
+
+
+
+    <section id="about">
+    <div class="two-col">
+      <div class="text-block">
+        <h3>Digital India in 2047</h3>
+        <p>"Digital India 2047" is the vision for transforming India into a developed nation by its 100th year of independence in 2047, a goal often referred to as "Viksit Bharat @2047". The digital transformation is seen as a crucial engine for this vision, focusing on citizen-centric governance, digital inclusion, and leveraging technology like AI, cloud, and IoT to achieve economic, social, and technological growth. Key priorities include bridging the digital divide, strengthening cybersecurity, promoting digital literacy, and developing a strong domestic innovation ecosystem.</p>
+      </div>
+
+      <figure class="img-card float" aria-hidden="true">
+        <img src="image/1.png" alt="futuristic city ">
+        <caption class="caption">Futuristic city</caption>
+      </figure>
     </div>
+  </section>
+
   
-    <div id="intro">
-         <h3>Digital India in 2047</h3>
-         
-    <p>"Digital India 2047" is the vision for transforming India into a developed nation by its 100th year of independence in 2047, a goal often referred to as "Viksit Bharat @2047". The digital transformation is seen as a crucial engine for this vision, focusing on citizen-centric governance, digital inclusion, and leveraging technology like AI, cloud, and IoT to achieve economic, social, and technological growth. Key priorities include bridging the digital divide, strengthening cybersecurity, promoting digital literacy, and developing a strong domestic innovation ecosystem. 
-</p>
-</div>
- <h2 style="text-align: center; font-size: 30px; margin-top: 50px;">Milestone</h2>
-   <div class="milestone">
-       
-        <div><h4 style= "color: #69e7f0">2024</h4> India hosted Global IndiaAI Summit </div>
-         <div><h4 style="color: #def069">2023</h4> G20 was hosted by India </div>
-          <div><h4 style= "color: #69e7f0">2022</h4> Government of India launched the "National Language Translation Mission" </div>
-           <div><h4 style="color: #def069">2021</h4> The Prime Minister inaugurated the "UMANG International" </div>
-    </div>
-<div id="expcontainer">
-<div id="exp">
-            <div >
-                <h2 style= "color: #69e7f0">Explore Initiatives</h2>
-                
-            </div>
-            <div>
-                <h2 style="color: #def069" >Our Pillars</h2>
-                
-            </div>
-        </div>
+  <section id="milestones">
+    <h2 style="text-align:center;font-size:28px;margin-bottom:12px">Milestone</h2>
 
-        <p><ul>
-            <li>
-                Nationwide high-speed connectivity.
-            </li>
-            <li>Digital skills & education for every citizen</li>
-            <li>Transparent & secure e-governance </li>
-        </ul></p>
-        
+    <div class="grid" role="list" aria-label="Milestone list">
+      <div class="card"><h4 class="accent1">2024</h4> India hosted Global IndiaAI Summit </div>
+      <div class="card"><h4 class="accent2">2023</h4> G20 was hosted by India </div>
+      <div class="card"><h4 class="accent1">2022</h4> Government of India launched the "National Language Translation Mission" </div>
+      <div class="card"><h4 class="accent2">2021</h4> The Prime Minister inaugurated the "UMANG International" </div>
+      <div class="card"><h4 class="accent1">Connectivity</h4>Reliable broadband & mobile coverage, especially in rural and remote regions.</div>
+      <div class="card"><h4 class="accent2">Digital Governance</h4>Secure citizen-centric services — accessible, transparent and accountable.</div>
+      <div class="card"><h4 class="accent1">Skills & Inclusion</h4>Training, local language support, and access for differently-abled citizens.</div>
     </div>
+
+    <div style="display:flex;justify-content:center;margin-top:22px">
+      <figure class="img-card small">
+        <img src="image/2.jpg" alt="ai pattern">
+        <caption class="caption">AI & language tech powering translation and access</caption>
+      </figure>
     </div>
-    <h2 style="text-align: center; font-size: 30px; margin-top: 50px;">About the Vision</h2>
-    <div id="p">
-    <p >Digital India 2047 aims to ensure inclusive growth through technology. It focuses on digital infrastructure, digital platforms for governance and an ecosystem that enables innovation and digital literacy.</p>
-    </div>
-    <div class="milestone" >
-    <div><h4 style= "color: #69e7f0">Connectivity</h4>Reliable broadband & mobile coverage, especially in rural and remote regions.</div>
-    <div><h4 style="color: #def069">Digital Governance</h4>Secure citizen-centric services — accessible, transparent and accountable.</div>
-    <div><h4 style= "color: #69e7f0">Skills & Inclusion</h4>Training, local language support, and access for differently-abled citizens.</div>
+  </section>
+
  
+  <section id="initiatives">
+    <div class="two-col">
+      <div class="text-block">
+        <h2 class="accent1">Explore Initiatives</h2>
+        <h2 class="accent2">Our Pillars</h2>
+        <ul style="margin-top:12px; list-style:disc; padding-left:18px; color:rgba(255,255,255,0.86)">
+          <li>Nationwide high-speed connectivity.</li>
+          <li>Digital skills & education for every citizen</li>
+          <li>Transparent & secure e-governance </li>
+        </ul>
+      </div>
+
+      <figure class="img-card">
+        <img src="image/7.png" alt="network ">
+        <caption class="caption">Network — pillars of infrastructure & platforms</caption>
+      </figure>
+    </div>
+  </section>
 
 
+  <section id="pillars">
+    <div class="two-col">
+      <div class="text-block">
+        <h2 style="margin-bottom:6px">Flagship Initiatives</h2>
+        <div style="margin-top:6px">
+          <div><span class="accent1">Smart Villages Program</span> <p style="margin-top:6px">Local digital hubs for health, education, agri-advisory and e-commerce access.</p></div>
+          <div><span class="accent2">e-Skills for All</span> <p style="margin-top:6px">Mass certification programs, localized courses and micro-credentials for jobs</p></div>
+          <div><span class="accent1">Secure ID & Trust</span> <p style="margin-top:6px">Privacy-first identity and consent frameworks to protect citizens' data rights.</p></div>
+        </div>
+      </div>
+
+      <figure class="img-card">
+        <img src="image/3.jpg" alt="devices">
+        <caption class="caption">Local digital hubs & skill centers — people-focused technology</caption>
+      </figure>
+    </div>
+  </section>
+
+
+  <section id="aboutvision">
+    <div class="two-col">
+      <div class="text-block">
+        <h2 style="text-align:center">About the Vision</h2>
+        <p>Digital India 2047 aims to ensure inclusive growth through technology. It focuses on digital infrastructure, digital platforms for governance and an ecosystem that enables innovation and digital literacy. "Digital India 2047" is the vision for the next phase of India's Digital India program, which aims to guide the country's digital transformation to achieve the goal of a "Viksit Bharat" (Developed India) by the 100th anniversary of independence in 2047. Its key focuses include strengthening digital infrastructure to the last mile, ensuring data privacy and cybersecurity, boosting digital literacy, fostering innovation and a strong domestic tech ecosystem, and leveraging digital technologies to improve governance, education, healthcare, and economic opportunities for all citizens. </p>
+        
+      </div>
+
+      <figure class="img-card small">
+        <img src="image/5.png" alt="digital infrastructure">
+        <caption class="caption">Resilient digital infrastructure — fiber, nodes & edge compute</caption>
+      </figure>
+    </div>
+  </section>
+
+ 
+  <section id="roadmap">
+    <div class="two-col">
+      <div class="text-block">
+        <h2 style="margin-bottom:6px">Roadmap to 2047</h2>
+        <div style="margin-top:8px">
+          <div style="color:#69e7f0"><strong>2025–2030</strong> <div style="color:#f0ff7b;font-weight:600">Foundations</div> <p style="margin-top:8px">Scale broadband, launch skills programs, strengthen cybersecurity baseline.</p></div>
+
+          <div style="color:#69e7f0"><strong>2031–2040</strong> <div style="color:#f0ff7b;font-weight:600">Acceleration</div> <p style="margin-top:8px">Local innovation hubs, AI for public services, digital adoption across industries.</p></div>
+
+          <div style="color:#69e7f0"><strong>2041–2047</strong> <div style="color:#f0ff7b;font-weight:600">Maturity</div> <p style="margin-top:8px">Full inclusion, resilient digital commons, and a globally competitive digital economy.</p></div>
+        </div>
+      </div>
+
+      <figure class="img-card">
+        <img src="image/8.jpg" alt=" roadmap">
+        <caption class="caption">Long-term roadmap — foundations to maturity</caption>
+      </figure>
+    </div>
+  </section>
+
+ 
+  <section id="numbers">
+    <h2 style="text-align:center;font-size:28px">By the Numbers (target)</h2>
+
+    <div class="counters" style="margin-top:18px">
+      <div class="counter"><h4 class="accent1">100%</h4><div>Digital Literacy.</div></div>
+      <div class="counter"><h4 class="accent2">1B+</h4><div>Internet Users</div></div>
+      <div class="counter"><h4 class="accent1">$1T</h4><div>Digital Economy</div></div>
+      <div class="counter"><h4 class="accent2">10K+</h4><div>Smart Villages</div></div>
+    </div>
+  </section>
+
+  
+  <section id="join">
+    <div class="two-col">
+      <div class="text-block">
+        <h2>Join the Mission</h2>
+        <p>Partner with the initiative — governments, companies, NGOs and citizens all play a part.</p>
+      </div>
+
+      <figure class="img-card small">
+        <img src="image/4.jpg" alt="collaboration">
+        <caption class="caption">Collaborate — governments, NGOs & citizens</caption>
+      </figure>
+    </div>
+
+    <div class="join-row" style="margin-top:18px">
+      <div>
+        <h2>Join the Mission</h2>
+        <p>Partner with the initiative — governments, companies, NGOs and citizens all play a part.</p>
+      </div>
+
+      <div style="display:flex;align-items:center;justify-content:center"><div class="cta" style="height:50px;margin:auto">Become a Partner</div></div>
+
+      <div style="display:flex;align-items:center;justify-content:center"><div class="cta" style="height:50px;margin:auto">Get Updates</div></div>
+    </div>
+  </section>
+
+  
+  <footer>
+    <div>
+      <h2>Digital India 2047</h2>
+      <p>A vision for the nation's digital future • © 2025</p>
+    </div>
+    <div>Built with ♥ for inclusive technology</div>
+    <div>Connect with the Digital India 2047 initiative to learn more or collaborate.</div>
+    <div>Digital India 2047 — By Aditya</div>
+  </footer>
 
 </body>
 </html>
+
+
